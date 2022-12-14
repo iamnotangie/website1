@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>floral boutique</title>
+    
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@800&family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+      <div class="container">
+        <a href="home.html" class="logo"><img src="./images/logo.png" width="150" height="50"></a>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="#about-us">About us</a></li>
+            <li><a href="flowers.html">Flowers</a></li>
+            <li><a href="meaning.html">Meaning</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="icons">
+            <a href="basketlist.html"><i class="uil uil-shopping-basket"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="uil uil-instagram"></i></a>
+            <a href="https://telegram.org/" target="_blank"><i class="uil uil-telegram-alt"></i></a>
+        </div>
+      </div>  
+    </nav>
+
+    <form action="http://185.182.111.214:7628/cgi-bin/form_action.py" id="UserEnter" name="UserEnter" target="_blank">
+    <div class="quiz">
+    
+    <h3>Q1. What flower have a symbolism of jealousy? </h3>
+    <input type="radio" name="question1"> red roses<br>
+    <input type="radio" name="question1"> white roses<br>
+    <input type="radio" name="question1" id="correct1"> yellow roses<br>
+
+    <br><h3>Q2. What flower represents true love?</h3>
+    <input type="radio" name="question2" id="correct2"> red roses<br>
+    <input type="radio" name="question2"> red tulips<br>
+    <input type="radio" name="question2"> pink roses<br>
+
+    <br><h3>Q3. What flower represents new beginnings? </h3>
+    <input type="radio" name="question3" id="correct3"> white roses<br>
+    <input type="radio" name="question3"> iris<br>
+    <input type="radio" name="question3"> peony<br>
+
+    <div class="sq">
+    <input type="submit" name="submit" value="Submit quiz" onClick="result()">
+    </div>
+  
+    
+    <button type="submit" class="btn">Send</button>
+    </form>
+    
+
+
+
+<script type="text/javascript">
+function result()
+{
+	var score=0;
+	if(document.getElementById('correct1').checked)
+		{	score++;
+		}
+	if(document.getElementById('correct2').checked)
+		{	score++;
+		}
+	if(document.getElementById('correct3').checked)
+		{	score++;
+		}
+ 
+    document.write("Your score is:"+score ,"Congratulations! You have successfully completed the quiz! Here is your promocode for discount: 86561");
+}
+</script>
+</div>
+
+
+  </body>
+  </html>

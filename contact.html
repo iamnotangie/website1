@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>floral boutique</title>
+    
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@800&family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+      <div class="container">
+        <a href="home.html" class="logo"><img src="./images/logo.png" width="150" height="50"></a>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="home.html#about-us">About us</a></li>
+            <li><a href="flowers.html">Flowers</a></li>
+            <li><a href="meaning.html">Meaning</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+        <div class="icons">
+            <a href="basketlist.html"><i class="uil uil-shopping-basket"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="uil uil-instagram"></i></a>
+            <a href="https://telegram.org/" target="_blank"><i class="uil uil-telegram-alt"></i></a>
+        </div>
+      </div>  
+    </nav>
+
+    <section id="contact">
+      <div class="container">
+        <form action="http://185.182.111.214:7628/cgi-bin/form_action.py" method="get" target="self">
+          <input type="text" name="Name" placeholder="Your name" required>
+          <input type="email" name="Email Address" placeholder="your@email.com" required>
+          <input type="number" name="Phone Number" placeholder="Phone number" required>
+          <input type="date" name="Date" placeholder="Date" required>
+          <textarea name="message" placeholder="Your comment" required></textarea>
+          <button type="submit" class="btn">Send</button>
+        </form>
+      </div>
+    </section>
+</body>
+</html>
+
+
